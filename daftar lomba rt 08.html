@@ -157,6 +157,72 @@
         <p>Jangan lewatkan keseruan ini! Ayo ikut berpartisipasi!</p>
     </div>
 </div>
+<div class="registration-form" id="registrationForm" style="display: block;">
+    <h3>Form Registrasi Lomba</h3>
+    <form id="form" action="https://docs.google.com/forms/d/e/1FAIpQLScBO7P5xiqrM8i-9xBZqc1RjKSyX8CSHCpViGfnJPcNy4jR-Q/viewform?usp=header" method="POST" target="_blank">
+        <input type="hidden" name="entry.123456789" id="timestamp" value="">
+        <label for="name">Nama:</label><br>
+        <input type="text" id="name" name="entry.1234567890" required=""><br>
+        
+        <label for="category">Kategori Peserta:</label><br>
+        <select id="category" name="entry.2345678901" onchange="updateEvents()" required="">
+            <option value="">Pilih Kategori</option>
+            <option value="children">Anak-anak</option>
+            <option value="teenagers">Remaja</option>
+            <option value="fathers">Bapak-bapak</option>
+            <option value="mothers">Ibu-ibu</option>
+        </select><br>
+        
+        <label for="event">Pilih Lomba:</label><br>
+        <select id="event" name="entry.3456789012" required="" style="outline: rgb(0, 0, 0) dotted 3px; outline-offset: 1px;">
+            <option value="">Pilih Lomba</option>
+            <optgroup label="Anak-anak">
+                <option>Lomba Kerupuk</option>
+                <option>Masukin Sedotan ke Botol</option>
+                <option>Makan Biscuit</option>
+                <option>Suapin Roti ke Orang Tua</option>
+                <option>Tebak Gambar</option>
+                <option>Gigit Koin</option>
+                <option>Balap Karung</option>
+                <option>Masukin Bendera ke Botol</option>
+                <option>Pindahin Gelas pake Balon</option>
+                <option>Sambung Lirik</option>
+            </optgroup>
+            <optgroup label="Remaja">
+                <option>Gigit Koin</option>
+                <option>Estafet Tepung</option>
+                <option>Voli Air</option>
+                <option>Balap Karung</option>
+                <option>Sambung Lirik</option>
+                <option>Cukurukuk</option>
+                <option>Tebak Gambar</option>
+                <option>Menahan Air di Ember</option>
+                <option>Lomba Kerupuk</option>
+            </optgroup>
+            <optgroup label="Bapak-bapak">
+                <option>Catur 5 Menit</option>
+                <option>Mecahin Balon pake Kaki</option>
+                <option>Giring Bola pake Terong</option>
+                <option>Estafet Tepung</option>
+                <option>Tebak Gambar</option>
+                <option>Tenis Meja</option>
+                <option>Sambung Lirik</option>
+            </optgroup>
+            <optgroup label="Ibu-ibu">
+                <option>Tebak Rempah</option> 
+                <option>Tebak Gambar</option>
+                <option>Oper Bola pake Terong</option>
+                <option>Tebak Singkatan</option>
+                <option>Masukin Benang ke Jarum</option>
+                <option>Sambung Lirik</option>
+            </optgroup>
+        </select><br>
+        
+        <input type="submit" value="Daftar">
+    </form>
+</div>
 
+    
 </body>
 </html>
+
